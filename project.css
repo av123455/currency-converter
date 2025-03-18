@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --font-family-main: 'Amiri', serif;
+    --font-family-heading: 'Lobster', cursive;
+    --border-radius: 10px;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --padding: 20px;
+    --transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: var(--font-family-main);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    margin: 20px 0;
+    font-family: var(--font-family-heading);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.container {
+    margin-top: 30px;
+    padding: var(--padding);
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+.main {
+    padding: var(--padding);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+.btn-primary.reset {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary.reset:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+
+.text-center {
+    text-align: center;
+}
+
+#finalAmount {
+    margin-top: 20px;
+}
+
+.finalValue {
+    color: green;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
